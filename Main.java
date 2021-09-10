@@ -29,18 +29,31 @@ class Main {
   }
 }*/
 
+/* question2
 class Main {
   public static void main(String[] args) {
     int [] arr = {0, 2, 4, 5, 10, 15, 25, 26, 42, 50, 60, 99};
-    int target = 50;
+    int target = 10;
     int high = arr.length - 1;
     int low = 0;
 
-    while(high != low){
+    while(high >= low){
       int mid = (high+low)/2;
-      
+      if(arr[mid] == target){
+        System.out.println(mid);
+        break;
+      }else if(arr[mid] < target){
+        low = mid + 1;
+      }else if(arr[mid]>target){
+        high = mid - 1;
+      }
     }
-
+    
+    if(high<low){
+      System.out.println(-1);
+    }
 
   }
 }
+*/
+
