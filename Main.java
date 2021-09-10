@@ -38,6 +38,7 @@ class Main {
 
     while(high != low){
       int mid = (high+low)/2;
+      
     }
 
 
