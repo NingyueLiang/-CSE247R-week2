@@ -42,7 +42,7 @@ class Main {
       if(arr[mid] == target){
         System.out.println(mid);
         break;
-      }else if(arr[mid] < target){
+      }else if(\d] < target){
         low = mid + 1;
       }else if(arr[mid]>target){
         high = mid - 1;
@@ -56,4 +56,21 @@ class Main {
   }
 }
 */
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    String a = "abcdba";
+    int longest = -1;
+    int start = 0;
 
+    HashMap<String, Integer> hm = new HashMap<String, Integer>();
+    for(int i = 0; i<a.length(); ++i){
+      if(!hm.containsKey(a.charAt(i))){
+        hm.put(a.charAt(i),i);
+
+      }else{
+
+      }
+    }
+  }
+}
